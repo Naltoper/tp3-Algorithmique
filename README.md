@@ -64,13 +64,13 @@ Lancement de tous les algo sur des graphs Grid :
 
 --- Random BFS ---
 java -classpath out/production/TP3 Main -b
-On 10 samples:
-Average eccentricity: 89.44390100867935
-Average wiener index: 22168449638
-Average diameter: 366
-Average number of leaves: 4319
-Average number of degree 2 vertices: 8486
-Average computation time: 30ms
+	On 10 samples:
+	Average eccentricity: 89.44390100867935
+	Average wiener index: 22168449638
+	Average diameter: 366
+	Average number of leaves: 4319
+	Average number of degree 2 vertices: 8486
+	Average computation time: 30ms
 
 --- Random Edge Insertion ---
 java -classpath out/production/TP3 Main -e
