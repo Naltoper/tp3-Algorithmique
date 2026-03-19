@@ -64,74 +64,74 @@ Lancement de tous les algo sur des graphs Grid :
 
 --- Random BFS ---
 java -classpath out/production/TP3 Main -b
-	On 10 samples:
-	Average eccentricity: 89.44390100867935
-	Average wiener index: 22168449638
-	Average diameter: 366
-	Average number of leaves: 4319
-	Average number of degree 2 vertices: 8486
-	Average computation time: 30ms
+- On 10 samples:
+- Average eccentricity: 89.44390100867935
+- Average wiener index: 22168449638
+- Average diameter: 366
+- Average number of leaves: 4319
+- Average number of degree 2 vertices: 8486
+- Average computation time: 30ms
 
 --- Random Edge Insertion ---
 java -classpath out/production/TP3 Main -e
-On 10 samples:
-Average eccentricity: 205.61137696457894
-Average wiener index: 44159576154
-Average diameter: 790
-Average number of leaves: 5240
-Average number of degree 2 vertices: 7264
-Average computation time: 30ms
+- On 10 samples:
+- Average eccentricity: 205.61137696457894
+- Average wiener index: 44159576154
+- Average diameter: 790
+- Average number of leaves: 5240
+- Average number of degree 2 vertices: 7264
+- Average computation time: 30ms
 
 --- Aldous Border ---
 java -classpath out/production/TP3 Main -a
-On 10 samples:
-Average eccentricity: 237.69551958714518
-Average wiener index: 51100832409
-Average diameter: 934
-Average number of leaves: 4998
-Average number of degree 2 vertices: 7656
-Average computation time: 53ms
+- On 10 samples:
+- Average eccentricity: 237.69551958714518
+- Average wiener index: 51100832409
+- Average diameter: 934
+- Average number of leaves: 4998
+- Average number of degree 2 vertices: 7656
+- Average computation time: 53ms
 
 --- Random Min Weight ---
 java -classpath out/production/TP3 Main -m
-On 10 samples:
-Average eccentricity: 226.85587614356086
-Average wiener index: 47533744080
-Average diameter: 848
-Average number of leaves: 5209
-Average number of degree 2 vertices: 7313
-Average computation time: 40ms
+- On 10 samples:
+- Average eccentricity: 226.85587614356086
+- Average wiener index: 47533744080
+- Average diameter: 848
+- Average number of leaves: 5209
+- Average number of degree 2 vertices: 7313
+- Average computation time: 40ms
 
 --- Wilson ---
 java -classpath out/production/TP3 Main -w
-On 10 samples:
-Average eccentricity: 243.49304480412857
-Average wiener index: 52232204916
-Average diameter: 963
-Average number of leaves: 5024
-Average number of degree 2 vertices: 7624
-Average computation time: 37ms
+- On 10 samples:
+- Average eccentricity: 243.49304480412857
+- Average wiener index: 52232204916
+- Average diameter: 963
+- Average number of leaves: 5024
+- Average number of degree 2 vertices: 7624
+- Average computation time: 37ms
 
 **Valeurs a ne pas prendre en compte pour Flip car nombre de flip volontairement reduit**
 --- Random Successive Flip (AVEC NOMBRE DE FLIP REDUIT CAR TROP LONG) ---
 java -classpath out/production/TP3 Main -f
-On 10 samples:
-Average eccentricity: 1663.7695988740325
-Average wiener index: 299262073113
-Average diameter: 6114
-Average number of leaves: 8148
-Average number of degree 2 vertices: 836
-Average computation time: 234ms
+- On 10 samples:
+- Average eccentricity: 1663.7695988740325
+- Average wiener index: 299262073113
+- Average diameter: 6114
+- Average number of leaves: 8148
+- Average number of degree 2 vertices: 836
+- Average computation time: 234ms
 
 --- Random Prim ---
 java -classpath out/production/TP3 Main -p
-On 10 samples:
-Average eccentricity: 114.53540933614825
-Average wiener index: 27485983033
-Average diameter: 435
-Average number of leaves: 5511
-Average number of degree 2 vertices: 6839
-Average computation time: 33ms
+- On 10 samples:
+- Average eccentricity: 114.53540933614825
+- Average wiener index: 27485983033
+- Average diameter: 435
+- Average number of leaves: 5511
+- Average number of degree 2 vertices: 6839
+- Average computation time: 33ms
 
 
 ## Analyse et considérations
@@ -152,6 +152,6 @@ Average computation time: 33ms
 - Moyennement rapides : **Wilson** (36 ms), **Random Min Weight** (45 ms).
 - Un peu plus lent : **Aldous Border** (54 ms).
 - Beaucoup plus lent : **Random Successive Flip** (204 ms avec un nombre de flip reduit, plusieurs minutes sinon)
-#### Conclusion
+## Conclusion
 
 - Le meilleur compromis semble etre **Random Edge Insertion** car il est tres rapide est meme si il ne produit pas une distribution parfaitement uniforme, il en est proche et c'est difficilement visualisable.
